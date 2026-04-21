@@ -175,9 +175,9 @@ function hideError() {
 function setLoading(state) {
   searchBtn.disabled = state;
   loadingSpinner?.classList.toggle('hidden', !state);
-  searchBtn.textContent = state ? 'Searching…' : 'Search';
+  searchBtn.textContent = state ? 'Searching for it' : 'Search';
 }
 
 function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
+  return str.charAt(0).toUpperCase();
 }
